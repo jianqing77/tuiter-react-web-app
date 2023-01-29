@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile Page</title>
+</head>
+
+<body>
+    <!-- Back To Navigation -->
+    <a href="profile.html">Back</a>
+
+    <!-- Header -->
+    <h1>Tuiter</h1>
+    <h2>Edit Profile</h2>
+
+    <!-- Save Link -->
+    <a href="profile.html">Save</a>
+
+    <!----------------------------  Modify Images ----------------------------->
+    <section>
+        <!-- Banner Image -->
+        <img src="pics/header.jpg" alt="header image" width="100%" height="200px">
+
+        <!-- Banner File Input Field -->
+        <form>
+            <label for="banner-image"></label>
+            <input type="file" name="banner" id="banner-image">
+        </form>
+
+        <!-- Avatar Image -->
+        <img src="pics/p1.jpg" alt="profile picture" width="48px" height="48px">
+        <!-- Avatar Image Input Field -->
+        <form>
+            <label for="avatar-image"></label>
+            <input type="file" name="avatar-image" id="avatar-image">
+        </form>
+    </section>
+
+    <hr>
+    <!----------------------------  Modify Name ----------------------------->
+    <section>
+        <label for="name-change">Name</label><br>
+        <input type="text" name="name-input" id="name-change" value="WebDev" placeholder="Name">
+    </section>
+
+    <hr>
+    <!----------------------------  Modify Bio ----------------------------->
+    <section>
+        <label for="bio-change">Bio</label><br>
+        <textarea name="bio-input" id="bio-change" cols="50"
+            rows="10">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</textarea>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tuit</title>
+</head>
+
+<body>
+    <a href="navigation.html">Back</a>
+
+    <!-- Heading -->
+    <h1>Tuiter</h1>
+    <h2>Tuit</h2>
+
+    <!-- Image -->
+    <img src="pics/p1.jpg" alt="profile picture" width="48px" height="48px">
+
+    <!-- Text Box -->
+    <form action="/dummy">
+        <label for="new-tuits"></label>
+        <textarea name="new-tuits" id="new-tuits" cols="20" rows="3" placeholder="What's happening?"></textarea>
+    </form>
+
+    <!-- Drop Down Select Option -->
+    <form>
+        <label for=select-reply-option"></label>
+        <select name="reply-option" id=select-reply-option">
+            <option value="EVERYONE">Everyone can reply</option>
+            <option value="FOLLOWING">People you follow</option>
+            <option value="MENTIONED">Only people you mention</option>
+        </select>
+    </form>
+    <hr>
+
+    <!-- Buttons -->
+    <div>
+        <label for="image-upload"></label> <!-- File upload button -->
+        <input type="file" name="uploaded-image" id="image-upload">
+        <button>Tuit</button> <!-- Tuit Button: create a new tuit -->
+    </div>
+    <hr>
+</body>
+
+</html>
