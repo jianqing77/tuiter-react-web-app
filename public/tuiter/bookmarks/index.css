@@ -1,0 +1,43 @@
+.wd-grid-col-side-bar{
+    width: 48px;
+}
+
+.wd-grid-col-content{
+    width: 90%;
+}
+
+.wd-border-test{
+    border: solid 2px white;
+}
+
+.wd-limit-content-width{
+    max-width: 506px;
+}
+
+.wd-image-large {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-border-rounded{
+    border-radius: 20px;
+}
+
+.wd-grid-col-icon{
+    width: 25%;
+    float:left;
+}
+
+.wd-heart-color{
+    color:rgb(224,37,94)
+}
+
+.wd-border-size{
+    box-sizing: border-box;
+}
+
+
+
+
