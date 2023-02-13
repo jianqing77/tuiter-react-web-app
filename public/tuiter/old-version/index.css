@@ -35,14 +35,6 @@
     padding: 16px;
 }
 
-.wd-guide-button-inactive {
-    color: rgb(110, 118, 125);
-    background-color: black;
-    border-style: none;
-    font-size: 15px;
-    font-weight: bold;
-    margin: auto;
-}
 
 button:focus {
     margin: auto;
