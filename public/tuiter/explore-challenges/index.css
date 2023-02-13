@@ -1,0 +1,109 @@
+
+
+
+.icon-size{
+  width: 20px;
+  height: 10px;
+}
+
+.icon-blue{
+  color: #0d6efd;
+}
+
+.wd-color-light-blue{
+  color:#1e9bf0;
+}
+
+.wd-bg-light-grey{
+  background-color:#eff3f4;
+}
+
+.nav-link.active{
+  text-underline-offset: 16px;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  border-radius: 10px;
+
+}
+
+#navbar-btn{
+  color: white;
+  font-weight: bold;
+  background-color: #1e9bf0;
+}
+
+.btn-font{
+  font-size: small;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* adjust search field */
+.search-field .input-group-text {
+    background-color: #eff3f4;
+    border-right: none;
+    border-radius: 20px;
+    
+  }
+
+.search-field .form-control {
+  border-radius: 20px;
+  border-left: none;
+}
+
+.no-padding{
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.post-subtitle {
+  font-size: 15px;
+  color: white;
+}
+
+.post-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* text with image as background */
+/* parent div is position-relative */
+/* style for the text */
+.subtitle-content{
+  position: absolute;
+  left: 1%;
+  bottom: 50px;
+  text-align: center;
+}
+
+.title-content {
+  position: absolute;
+  left: 1%;
+  bottom: 10px;
+  text-align: center;
+}
+
+.tweets-title{
+  font-size: 19px;
+}
+
+.tweets-subtitle{
+  font-size: 15px;
+}
+
+.post-image {  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:80px;
+  height: 80px;
+}
+
+
+.sidebar-image {
+  width:45px;
+  height: 45px;
+}
+
