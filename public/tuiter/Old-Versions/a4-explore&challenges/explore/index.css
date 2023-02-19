@@ -1,26 +1,27 @@
-
-
-/* .nav-item.active {
-  color: white;
-  background-color: #0d6efd;
-} */
+.nav-item.active {
+    color: white;
+    background-color: #0d6efd;
+  }
 
 
 .icon-blue{
   color: #39a4d8  ;
 }
 
+.icon-blue{
+  color: #0d6efd;
+}
 
 /* adjust search field */
 .search-field .input-group-text {
-  background-color: white;
-  border-right-color: transparent;
-  border-radius: 20px;
-}
+    background-color: transparent;
+    border-right: none;
+    border-radius: 20px;
+  }
 
 .search-field .form-control {
   border-radius: 20px;
-  border-left-color: transparent;
+  border-left: none;
 }
 
 
@@ -33,14 +34,14 @@
 .post-title {
   font-size: 35px;
   font-weight: bold;
-  color: rgb(34,34,34);
+  color: white;
 }
 
 .post-image {  
   margin-top: 10px;
   margin-bottom: 10px;
-  width:70px;
-  height: 70px;
+  width:80px;
+  height: 80px;
 }
 
 .sidebar-image {
@@ -48,10 +49,6 @@
   height: 45px;
 }
 
-.avatar-image {
-  width:55px;
-  height: 55px;
-}
 /* text with image as background */
 /* parent div is position-relative */
 /* style for the text */
@@ -61,15 +58,3 @@
   bottom: 5px;
   text-align: center;
 }
-
-.tweets-title{
-  font-size: 17px;
-}
-/* .wd-bg-light-grey{
-  background-color: rgb(34,34,34);
-} */
-
-
-/* .tweets-description{
-  height: 20%;
-}  */

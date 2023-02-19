@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Link to BootStrap -->
+        <!-- <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous" /> -->
+        <link rel="stylesheet" href="../../../../vendors/css/bootstrap.min.css" />
+        <!-- link to icons -->
+        <!-- <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css" /> -->
+        <script src="https://kit.fontawesome.com/f13717ae26.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container mt-2 mb-4">
+            <!-- Add gutters between col: g-n -->
+            <div class="row g-4">
+                <!----------------------------------------------------->
+                <!--------------------- Navigation -------------------->
+                <!----------------------------------------------------->
+                <section class="col-xl-2 col-lg-1 col-2">
+                    <nav>
+                        <ul class="nav navbar-nav border">
+                            <li class="nav-item">
+                                <a class="nav-link ms-3" href="#">
+                                    <span><i class="fa-brands fa-twitter"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-top">
+                                <a class="nav-link ms-3" href="../home.html">
+                                    <span><i class="fa-solid fa-house-chimney"></i></span>
+                                    <span class="d-none d-xl-inline">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-top active">
+                                <a class="nav-link ms-3" href="../explore/index.html">
+                                    <span><i class="fa-solid fa-hashtag"></i></span>
+                                    <span class="d-none d-xl-inline">Explore</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-top">
+                                <a class="nav-link ms-3" href="../notifications.html">
+                                    <span><i class="fa-solid fa-bell"></i></span>
+                                    <span class="d-none d-xl-inline">Notifications</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-top">
+                                <a class="nav-link ms-3" href="../messages.html">
+                                    <span><i class="fa-solid fa-envelope"></i></span>
+                                    <span class="d-none d-xl-inline">Message</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-top">
+                                <a class="nav-link ms-3" href="../bookmarks/index.html">
+                                    <span><i class="fa-solid fa-bookmark"></i></span>
+                                    <span class="d-none d-xl-inline">Bookmarks</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-top">
+                                <a class="nav-link ms-3" href="../lists.html">
+                                    <span><i class="fa-solid fa-list"></i></span>
+                                    <span class="d-none d-xl-inline">Lists</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-top">
+                                <a class="nav-link ms-3" href="../profile.html">
+                                    <span><i class="fa-solid fa-user"></i></span>
+                                    <span class="d-none d-xl-inline">Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-top">
+                                <a class="nav-link ms-3" href="../more.html">
+                                    <span><i class="fa-solid fa-info-circle"></i></span>
+                                    <span class="d-none d-xl-inline">More</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button type="button" class="btn btn-primary rounded-pill btn-navbar w-100 mw-100 p-lg-1 mt-2">
+                        Tweet
+                    </button>
+                </section>
+
+                <!----------------------------------------------------->
+                <!--------------------- Main Content ------------------>
+                <!----------------------------------------------------->
+                <main class="col-xl-6 col-lg-7 col-10">
+                    <!----------- Search Field ----------->
+                    <!-- input group -->
+                    <div class="row">
+                        <div class="col-11">
+                            <div class="input-group search-field">
+                                <!-- span.input-group-text -->
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                                <!-- input field: input.form-control -->
+                                <input type="text" class="form-control seach-field" placeholder="Search Twitter" />
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <a href="explore-settings.html">
+                                <i class="fa-solid fa-gear icon-blue fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!---------------- Tab --------------->
+                    <section class="mt-3">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="nav-links/foryou.html">For you</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nav-links/trending.html">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nav-links/news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nav-links/sports.html">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-none d-md-flex" href="nav-links/entertainment.html">
+                                    Entertainment
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!---------------- Image & Text --------------->
+                    <div class="position-relative">
+                        <img src="../../../pics/a4-spaceX.jpg" alt="" class="img-fluid" />
+                        <div class="content post-title ms-2">SpaceX's Starship</div>
+                    </div>
+
+                    <!------------------- Posts ------------------>
+                    <div class="container border">
+                        <!-- post 1 -->
+                        <div class="row border border-top-0">
+                            <div class="col-9 col-md-10 py-2">
+                                <span class="text-muted d-block">Web Development</span>
+                                <span class="fw-bold">ReactJS</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-muted">-2h</span>
+                                <span class="d-block fw-bold">
+                                    React.js is a component based front end library that makes it very easy to build
+                                    Single Page Applications or SPAs
+                                </span>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <img
+                                    class="rounded post-image img-fluid"
+                                    src="../pics/a4-react.svg"
+                                    alt="Image React" />
+                            </div>
+                        </div>
+
+                        <!-- post 2 -->
+                        <div class="row border border-top-0">
+                            <div class="col-9 col-md-10 py-2">
+                                <span class="fw-bold">JavaScript</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-muted">-2h</span>
+                                <span class="d-block fw-bold">
+                                    JavaScript is programming language that can run on browsers as well as desktops
+                                </span>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <img class="rounded post-image img-fluid" src="../pics/a4-js.png" alt="Image React" />
+                            </div>
+                        </div>
+                        <!-- post 3 -->
+                        <div class="row border border-top-0">
+                            <div class="col-9 col-md-10 py-2">
+                                <span class="text-muted d-block">Web Development</span>
+                                <span class="fw-bold">jQuery</span>
+                                <span class="text-muted d-block">123k Tweets</span>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <img
+                                    class="rounded post-image img-fluid"
+                                    src="../pics/a4-jquery.png"
+                                    alt="Image React" />
+                            </div>
+                        </div>
+                        <!-- post 4 -->
+                        <div class="row border border-top-0">
+                            <div class="col-9 col-md-10 py-2">
+                                <span class="text-muted d-block">Web Development</span>
+                                <span class="fw-bold">NodeJS</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-muted">-2h</span>
+                                <span class="text-muted d-block">123k Tweets</span>
+                            </div>
+                            <div class="col-3 col-md-2">
+                                <img
+                                    class="rounded post-image img-fluid"
+                                    src="../pics/a4-nodejs.png"
+                                    alt="Image React" />
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!----------------------------------------------------->
+                <!--------------------- Right bar ------------------>
+                <!----------------------------------------------------->
+                <section class="col-xl-4 col-lg-4 d-none d-lg-block">
+                    <ul class="list-group">
+                        <li class="list-group-item fw-bold">Who to follow</li>
+                        <!-- item 1 -->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 pe-none ps-xl-3 ps-lg-1">
+                                    <img
+                                        src="../pics/a4-java.jpg"
+                                        alt="logo Java"
+                                        class="sidebar-image rounded-circle" />
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pe-none ps-xl-1 ps-lg-0">
+                                    <div class="fw-bold">
+                                        Java
+                                        <i class="fa-solid fa-circle-check ms-1"></i>
+                                    </div>
+                                    @java
+                                </div>
+                                <div class="col-xl-3 col-lg-3 no-padding pt-1">
+                                    <button class="btn btn-primary rounded-pill ms-xxl-4">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- item 2 -->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 pe-none ps-xl-3 ps-lg-1">
+                                    <img
+                                        src="../pics/a4-relativity.jpg"
+                                        alt="logo relativity space"
+                                        class="sidebar-image rounded-circle" />
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pe-none pe-1pxps-xl-1 ps-lg-0">
+                                    <div class="fw-bold">
+                                        Relativity Space
+                                        <i class="fa-solid fa-circle-check ms-1"></i>
+                                    </div>
+                                    @relativityspace
+                                </div>
+                                <div class="col-xl-3 col-lg-3 no-padding pt-1">
+                                    <button class="btn btn-primary rounded-pill ms-xxl-4">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- item 3 -->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 pe-none ps-xl-3 ps-lg-1">
+                                    <img
+                                        src="../pics/a4-virgin.svg"
+                                        alt="logo relativity space"
+                                        class="sidebar-image rounded-circle" />
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pe-none ps-xl-1 ps-lg-0">
+                                    <div class="fw-bold">
+                                        Virgin Galactic
+                                        <i class="fa-solid fa-circle-check ms-1"></i>
+                                    </div>
+                                    @virgingalactic
+                                </div>
+                                <div class="col-xl-3 col-lg-3 no-padding pt-1">
+                                    <button class="btn btn-primary rounded-pill ms-xxl-4">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- item 4 -->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 pe-none ps-xl-3 ps-lg-1">
+                                    <img
+                                        src="../pics/a4-nasa.svg"
+                                        alt="logo NASA"
+                                        class="sidebar-image rounded-circle" />
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pe-none ps-xl-1 ps-lg-0">
+                                    <div class="fw-bold">
+                                        NASA
+                                        <i class="fa-solid fa-circle-check ms-1"></i>
+                                    </div>
+                                    @NASA
+                                </div>
+                                <div class="col-xl-3 col-lg-3 no-padding pt-1">
+                                    <button class="btn btn-primary rounded-pill ms-xxl-4">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- item 5 -->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-2 pe-none">
+                                    <img
+                                        src="../pics/a4-tesla.jpg"
+                                        alt="logo Tesla"
+                                        class="sidebar-image rounded-circle" />
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pe-none ps-xl-1 ps-lg-0">
+                                    <div class="fw-bold">
+                                        Tesla
+                                        <i class="fa-solid fa-circle-check ms-1"></i>
+                                    </div>
+                                    @Tesla
+                                </div>
+                                <div class="col-xl-3 col-lg-3 no-padding pt-1">
+                                    <button class="btn btn-primary rounded-pill ms-xxl-4">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
