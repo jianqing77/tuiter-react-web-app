@@ -5,11 +5,13 @@ const posts = [
         handle: 'elonmusk',
         time: '23h',
         contentBrief:
-            'Amazing show about <a href="https://twitter.com/inspiration4x?lang=en" class="text-decoration-none"> @Inspiration4x</a> mission!',
+            'Amazing show about' +
+            '<a href="https://twitter.com/inspiration4x?lang=en" class="text-decoration-none"> @Inspiration4x</a>' +
+            ' mission!',
         image: '../pics/a5-post-inspiration4.jpg',
         title: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
         body: 'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space...',
-        externalLink: 'www.netflix.com',
+        externalLink: 'https://www.netflix.com',
         linkText: 'netflix.com',
         numComments: '4.2k',
         numRetweet: '3.5k',

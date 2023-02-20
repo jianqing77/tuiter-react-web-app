@@ -12,13 +12,17 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Home Screen Testing</title>
     </head>
     <body>
+        <script src="index.js" type="module"></script>
+
         <div class="row mt-2">
             <div class="col-2 col-md-2 col-lg-1 col-xl-2">${NavigationSidebar()}</div>
             <div class="col-10 col-lg-7 col-xl-6">
                 <ul>
+                    <a href="https://twitter.com/inspiration4x?lang=en">@Inspiration4x</a>
+
                     <!------------------ Post with Title ------------------->
                     <li class="d-flex justify-content-between align-items-center bg-black border-none">
                         <div class="row">
@@ -40,7 +44,12 @@
                                         <span><i class="fas fa-ellipsis-h icon-size"></i></span>
                                     </div>
                                 </header>
-                                <span class="d-block mb-2">Amazing show about @Inspiration4x mission!</span>
+                                <span class="d-block mb-2">
+                                    Amazing show about
+                                    <a href="https://twitter.com/inspiration4x?lang=en">@Inspiration4x</a>
+                                    mission!
+                                </span>
+
                                 <!--------------------  Post - Card ------------------------>
                                 <div class="card bg-transparent border border-light rounded-4">
                                     <!-- image -->
@@ -65,7 +74,9 @@
                                             with the Inspiration4 crew on the first all-civilian orbital space...
                                             <span class="d-block">
                                                 <i class="fa-solid fa-link text-muted"></i>
-                                                <a href="www.netflix.com" class="text-decoration-none text-muted">
+                                                <a
+                                                    href="https://www.netflix.com"
+                                                    class="text-decoration-none text-muted">
                                                     netflix.com
                                                 </a>
                                             </span>
@@ -158,7 +169,6 @@
             <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">${WhoToFollowList()}</div>
         </div>
 
-        <!-- <div class="container" id="wd-explore"></div>
-        <script src="index.js" type="module"></script> -->
+        <!-- <!-- <div class="container" id="wd-explore"></div> -->
     </body>
 </html>
