@@ -12,18 +12,18 @@ const PostItem = (post) => {
                     <div class="col-sm-11 col-10 pe-none ps-4">
                         <header class="d-flex justify-content-between">
                             <div>
-                                <span class="fw-bold">${post.userName}</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 17 18">
+                                <span class="fw-bold text-white">${post.userName}</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-patch-check-fill" viewBox="0 0 17 18">
                                     <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
                                 </svg>
                                 <span class="text-muted ms-1">${post.handle} &#183;</span>
                                 <span class="text-muted">${post.time}</span>
                             </div>
                             <div>
-                                <span><i class="fas fa-ellipsis-h icon-size"></i></span>
+                                <span><i class="fas fa-ellipsis-h icon-size pe-1"></i></span>
                             </div>
                         </header>
-                        <span class="d-block mb-2">${post.contentBrief}</span>
+                        <span class="d-block mb-2 text-white">${post.contentBrief}</span>
                         <!--------------------  Post - Card ------------------------>
                         <div class="card bg-transparent border border-light rounded-4">
                             <!-- image -->
@@ -40,7 +40,7 @@ const PostItem = (post) => {
                             <!-- </div> -->
                             <!-- content -->
                             <div class="card-body border-top border-light">
-                                <span class="tweets-title d-block">
+                                <span class="tweets-title d-block text-white">
                                     ${post.title}
                                 </span>
                                 <span class="text-muted d-block">
@@ -76,14 +76,13 @@ const PostItem = (post) => {
                     </div>
                 </div>
             </li>
-
             <div>
                 <hr />
             </div>
         `;
     } else {
         return `
-            <li class="d-flex justify-content-between align-items-center bg-black border-none">
+            <li class="d-flex justify-content-between align-items-center bg-black border-none pe-1">
                 <div class="row">
                     <div class="col-sm-1 col-2">
                         <img
@@ -91,10 +90,10 @@ const PostItem = (post) => {
                             alt="avatar"
                             class="avatar-image rounded-circle" />
                     </div>
-                    <div class="col-sm-11 col-10 pe-none ps-4">
+                    <div class="col-sm-11 col-10 pe-none ps-4 ">
                         <header class="d-flex justify-content-between">
                             <div>
-                                <span class="fw-bold">${post.userName}</span>
+                                <span class="fw-bold text-white">${post.userName}</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 17 18">
                                     <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
                                 </svg>
@@ -102,10 +101,10 @@ const PostItem = (post) => {
                                 <span class="text-muted">${post.time}</span>
                             </div>
                             <div>
-                                <span><i class="fas fa-ellipsis-h icon-size"></i></span>
+                                <span><i class="fas fa-ellipsis-h icon-size pe-1"></i></span>
                             </div>
                         </header>
-                        <span class="d-block mb-2">${post.contentBrief}</span>
+                        <span class="d-block mb-2 text-white">${post.contentBrief}</span>
                         <!--------------------  Post - Image ------------------------>
                         <img
                             src=${post.image}

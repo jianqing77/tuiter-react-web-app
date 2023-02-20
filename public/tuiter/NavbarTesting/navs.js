@@ -6,12 +6,12 @@ export default [
     },
     {
         navName: 'Home',
-        navLink: '../home.html',
+        navLink: '../HomeScreen/index.html',
         navIcon: 'fa-solid fa-house-chimney',
     },
     {
         navName: 'Explore',
-        navLink: '../explore/index.html',
+        navLink: '../ExploreScreen/index.html',
         navIcon: 'fa-solid fa-hashtag',
     },
     {

@@ -1,21 +1,16 @@
-export default [
-    {
-        navName: '',
-        navLink: '',
-        navIcon: 'fa-brands fa-twitter',
-    },
+const navs = [
     {
         navName: 'Home',
-        navLink: '../home.html',
+        navLink: '../HomeScreen/index.html',
         navIcon: 'fa-solid fa-house-chimney',
     },
     {
         navName: 'Explore',
-        navLink: '../explore/index.html',
+        navLink: '../ExploreScreen/index.html',
         navIcon: 'fa-solid fa-hashtag',
     },
     {
-        navName: 'Notification',
+        navName: 'Notifications',
         navLink: '../notifications.html',
         navIcon: 'fa-solid fa-bell',
     },
@@ -45,3 +40,5 @@ export default [
         navIcon: 'fa-solid fa-info-circle',
     },
 ];
+
+export default navs;

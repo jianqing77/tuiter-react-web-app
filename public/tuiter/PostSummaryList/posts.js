@@ -4,7 +4,7 @@ const posts = [
         userName: 'ReactJS',
         time: '2h',
         title: 'React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs',
-        image: '../pics/a4-react.svg',
+        image: '../pics/a5-react.jpg',
     },
     {
         topic: '',
@@ -19,7 +19,7 @@ const posts = [
         userName: '',
         title: 'jQuery',
         time: 'last week',
-        image: '../pics/a4-jquery.png',
+        image: '../pics/a5-jquery.jpg',
         tweets: '122K',
     },
     {

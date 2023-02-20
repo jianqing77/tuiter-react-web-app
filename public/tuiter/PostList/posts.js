@@ -29,7 +29,7 @@ const posts = [
         externalLink: '',
         numComments: '965',
         numRetweet: '2.4k',
-        numLike: '4k',
+        numLikes: '4k',
     },
 ];
 
