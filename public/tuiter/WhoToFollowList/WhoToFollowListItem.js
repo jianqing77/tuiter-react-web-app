@@ -13,7 +13,7 @@ const WhoToFollowListItem = (who) => {
                         ${who.userName}
                         <i class="fa-solid fa-circle-check ms-1"></i>
                     </div>
-                    ${who.handle}
+                    @${who.handle}
                 </div>
                 <div class="col-xl-3 col-lg-3 no-padding pt-1">
                     <button class="btn btn-primary rounded-pill ms-xxl-1">Follow</button>
