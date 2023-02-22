@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-// import Labs component
+// import components
 import Labs from './labs';
 import HelloWorld from './labs/a6/hello-world';
+import Tuiter from './tuiter';
 
 function App() {
     // returning an HTML tag, not an HTML string
@@ -14,6 +15,7 @@ function App() {
         <div className="container">
             <HelloWorld />
             <Labs /> {/* the Lab component */}
+            <Tuiter />
         </div>
     );
 }
