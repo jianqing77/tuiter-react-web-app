@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 // import Labs component
 import Labs from './labs';
+import HelloWorld from './labs/a6/hello-world';
 
 function App() {
     // returning an HTML tag, not an HTML string
@@ -11,7 +12,7 @@ function App() {
     // Wrap the HTML content in a DIV element with the container class
     return (
         <div className="container">
-            <h1>Hello World!</h1>
+            <HelloWorld />
             <Labs /> {/* the Lab component */}
         </div>
     );
