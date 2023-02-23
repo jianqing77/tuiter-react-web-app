@@ -1,7 +1,7 @@
 // create & export the lab component
 
 import Assignment6 from './a6';
-import Nav from '../nav';
+import Nav from '../nav'; // import the navigation component
 
 function Labs() {
     return (
