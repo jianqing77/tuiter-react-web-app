@@ -1,6 +1,5 @@
 import React from 'react';
 
-// TODO: change avatarIcon location
 const WhoToFollowListItem = ({ who }) => {
     return (
         <li className="list-group-item">
