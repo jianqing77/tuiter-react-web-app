@@ -1,10 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-// import components
 import Labs from './labs';
 import HelloWorld from './labs/a6/hello-world';
 import Tuiter from './tuiter';
-// import browserRouter
 // BrowserRouter tag sets up the base mechanism to navigate between multiple components
 // to navigate between the three components within the BrowserRouter tag
 import { BrowserRouter } from 'react-router-dom';
