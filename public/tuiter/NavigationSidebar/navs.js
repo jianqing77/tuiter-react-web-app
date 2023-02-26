@@ -22,7 +22,7 @@ const navs = [
     {
         navName: 'Bookmarks',
         navLink: '../bookmarks/index.html',
-        navIcon: 'fa-solid fa-bell',
+        navIcon: 'fa-solid fa-bookmark',
     },
     {
         navName: 'Lists',

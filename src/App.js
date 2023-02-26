@@ -26,10 +26,11 @@ function App() {
                     {/* declare the Lab component as the default landing screen */}
                     <Route index element={<Labs />} />
                     <Route path="/hello" element={<HelloWorld />} />
-                    <Route path="/tuiter" element={<Tuiter />} />
+                    <Route path="/tuiter/*" element={<Tuiter />} />
                 </Routes>
             </div>
         </BrowserRouter>
     );
 }
+
 export default App;

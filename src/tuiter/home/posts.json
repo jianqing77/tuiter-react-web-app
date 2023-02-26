@@ -1,0 +1,53 @@
+[
+    {
+        "_id": 111,
+        "user":{
+            "avatarIcon": "spacex.jpg",
+            "userName": "SpaceX",
+            "handle": "SpaceX",
+            "time": "23h",
+            "contentBrief": "Dennis and Akiko Tito are the first two crewmembers on Starship's second commercial spaceflight around the Moon",
+            "externalLink": "https://www.spacex.com/updates/index.html",
+            "linkText": "spacex.com/updates",
+            "numComments": "595",
+            "numRetweet": "1,168",
+            "numLikes": "11.1k",
+            "image": "post-dannisakiko.jpg"
+        },
+        "retweet_status": {
+            "isRetweeted": true,
+            "retweetedUser": "Elon Musk",
+            "retweetedContent": false
+        }
+    },
+    {
+        "_id": 112,
+        "user":{
+            "avatarIcon": "elonmusk.jpg",
+            "userName": "Elon Musk",
+            "handle": "elonmusk",
+            "time": "15h",
+            "contentBrief": "We might need a different name, as this is basically just Starlink with roaming capability, so you can take your terminal anywhere.",
+            "externalLink": "",
+            "linkText": "",
+            "numComments": "5,346",
+            "numRetweet": "1,601",
+            "numLikes": "19.2k",
+            "image": "" 
+        },
+        "retweet_status":{
+            "isRetweeted": false,
+            "retweetedContent": true,
+            "originalUser": {
+              "_id": 111,
+              "avatarIcon": "spacex.jpg",
+              "userName": "SpaceX",
+              "handle": "SpaceX",
+              "time": "16h",
+              "contentBrief": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage",
+              "externalLink": "#",
+              "linkText": "starlink.com/rv"
+            }
+        }
+    }
+]
