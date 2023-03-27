@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Link to BootStrap -->
+        <!-- link to BootsWatch -->
+        <!-- <link rel="stylesheet" href="../../vendors/bootswatch/bootstrap.min.css" /> -->
+        <link rel="stylesheet" href="../../../../public/vendors/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="../../classes/index.css" />
+        <!-- Icons -->
+        <!-- <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css" /> -->
+        <script src="https://kit.fontawesome.com/f13717ae26.js" crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test Edit Profile</title>
+    </head>
+    <body>
+        <div class="row ps-4">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="container border">
+                    <!------------------------------------------------->
+                    <!---------------- arrow and name ----------------->
+                    <!------------------------------------------------->
+                    <div class="row align-items-center mt-2 d-flex">
+                        <div class="col-1 border">
+                            <i class="fa-solid fa-xmark fa-xl ps-4"></i>
+                        </div>
+                        <div class="col-8 border">
+                            <span class="align-middle h4">Edit Profile</span>
+                        </div>
+                        <div class="col-3 border">
+                            <button class="btn bg-black rounded-pill float-end ms-xxl-1 text-white">
+                                <span class="mx-2">Save</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!------------ background & avatar & button ------->
+                    <div class="position-relative">
+                        <div class="d-flex justify-content-center mt-2">
+                            <img src="../../images/background.jpg" class="img-fluid bg-profile" />
+                            <img
+                                src="../../images/black.jpg"
+                                class="img-fluid opacity-50 bg-profile position-absolute top-0 left-0 right-0 bottom-0" />
+                            <div
+                                class="position-absolute d-flex align-content-center justify-content-between"
+                                style="top: 120px">
+                                <span>
+                                    <i class="fa-solid fa-camera fa-3x" style="color: #e3e3e3"></i>
+                                </span>
+                                <span class="ms-4">
+                                    <i class="fa-regular fa-circle-xmark fa-3x" style="color: #e3e3e3"></i>
+                                </span>
+                            </div>
+                            <!-- Avatar -->
+                            <div>
+                                <img
+                                    src="../../images/monica.jpg"
+                                    class="position-absolute translate-middle-x icon-150px rounded-circle avatar-location" />
+                                <img
+                                    src="../../images/black.jpg"
+                                    class="opacity-25 position-absolute translate-middle-x icon-150px rounded-circle avatar-location" />
+                                <div
+                                    class="position-absolute translate-middle-x rounded-circle avatar-location"
+                                    style="margin-bottom: 60px">
+                                    <i class="fa-solid fa-camera fa-3x" style="color: #e3e3e3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------ Content ------->
+                    <div class="mt-5 ms-4">
+                        <div class="card mt-2 border">
+                            <div class="card-body">
+                                <label for="name" class="form-label text-muted">Name</label>
+                                <textarea
+                                    class="form-control border-0 p-0"
+                                    id="name"
+                                    rows="1"
+                                    placeholder="Boston, MA"
+                                    style="outline: none; box-shadow: none; font-size: 19px"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="card mt-2 border">
+                            <div class="card-body">
+                                <label for="bio" class="form-label text-muted">Bio</label>
+                                <textarea
+                                    class="form-control border-0 p-0"
+                                    id="bio"
+                                    rows="1"
+                                    placeholder="CS Graduate Student at Northeastern University. Retuits and likes are not endorsements."
+                                    style="outline: none; box-shadow: none; font-size: 19px"></textarea>
+                            </div>
+                        </div>
+                        <div class="card mt-2 border">
+                            <div class="card-body">
+                                <label for="location" class="form-label text-muted">Location</label>
+                                <textarea
+                                    class="form-control border-0 p-0"
+                                    id="location"
+                                    rows="1"
+                                    placeholder="Boston, MA"
+                                    style="outline: none; box-shadow: none; font-size: 19px"></textarea>
+                            </div>
+                        </div>
+                        <div class="card mt-2 border">
+                            <div class="card-body">
+                                <label for="website" class="form-label"></label>
+                                <textarea
+                                    class="form-control border-0 p-0"
+                                    id="website"
+                                    rows="1"
+                                    placeholder="Website"
+                                    style="outline: none; box-shadow: none; font-size: 19px"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- <div class="h4 fw-bold">Monica Geller</div>
+                        <div class="text-muted">@monica</div>
+                        <div class="mt-2">
+                            CS Graduate Student at Northeastern University. Retuits and likes are not endorsements.
+                        </div>
+                        <div class="me-3 mt-2">
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span class="ms-1">Boston, MA</span>
+                            </span>
+                            <span class="ms-3">
+                                <i class="fa-solid fa-cake-candles"></i>
+                                <span class="ms-1">Born November 21, 1987</span>
+                            </span>
+                            <span class="ms-3">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span class="ms-1">Joined April 2009</span>
+                            </span>
+                        </div> -->
+                    </div>
+                    <!------------ Footer ------------>
+                    <footer class="ms-4 me-3 mt-2">
+                        <span>
+                            <span class="fw-bold">340</span>
+                            <span>Following</span>
+                        </span>
+                        <span class="ms-3">
+                            <span class="ms-1 fw-bold">223</span>
+                            <span>Followers</span>
+                        </span>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </body>
+</html>

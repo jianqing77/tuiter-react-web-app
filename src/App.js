@@ -21,7 +21,9 @@ function App() {
             <div className="container">
                 <Routes>
                     {/* declare the Lab component as the default landing screen */}
-                    <Route index element={<Labs />} />
+                    {/* <Route index element={<Labs />} /> */}
+                    {/* change the lab component route in App.js so that all routes after /* are handled by the routes declared in the labs component */}
+                    <Route index path="/*" element={<Labs />} />
                     <Route path="/hello" element={<HelloWorld />} />
                     <Route path="/tuiter/*" element={<Tuiter />} />
                 </Routes>

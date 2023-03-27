@@ -68,30 +68,14 @@
 }
 
 
-.tweets-light-blue{
-   color: #35a6f1 ;
-}
-
 .icon-20px {
    height: 20px;
    width: 20px;
 }
 
-.icon-150px {
-   height: 160px;
-   width: 160px;
+.tweets-light-blue{
+   color: #35a6f1 ;
 }
-
-.bg-profile {
-   width:100%;
-   height:300px;
-}
-
-.avatar-location {
-   bottom: -30px; 
-   left: 100px;
-}
-
 
 
 
