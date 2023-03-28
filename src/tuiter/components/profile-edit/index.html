@@ -24,18 +24,16 @@
         <div class="row ps-4">
             <div class="col-2"></div>
             <div class="col-8">
-                <div class="container border">
-                    <!------------------------------------------------->
+                <div class="container">
                     <!---------------- arrow and name ----------------->
-                    <!------------------------------------------------->
                     <div class="row align-items-center mt-2 d-flex">
-                        <div class="col-1 border">
+                        <div class="col-1">
                             <i class="fa-solid fa-xmark fa-xl ps-4"></i>
                         </div>
-                        <div class="col-8 border">
+                        <div class="col-8">
                             <span class="align-middle h4">Edit Profile</span>
                         </div>
-                        <div class="col-3 border">
+                        <div class="col-3">
                             <button class="btn bg-black rounded-pill float-end ms-xxl-1 text-white">
                                 <span class="mx-2">Save</span>
                             </button>
@@ -76,6 +74,7 @@
                     </div>
                     <!------------ Content ------->
                     <div class="mt-5 ms-4">
+                        <!-- change name -->
                         <div class="card mt-2 border">
                             <div class="card-body">
                                 <label for="name" class="form-label text-muted">Name</label>
@@ -87,7 +86,7 @@
                                     style="outline: none; box-shadow: none; font-size: 19px"></textarea>
                             </div>
                         </div>
-
+                        <!-- change bio -->
                         <div class="card mt-2 border">
                             <div class="card-body">
                                 <label for="bio" class="form-label text-muted">Bio</label>
@@ -99,6 +98,7 @@
                                     style="outline: none; box-shadow: none; font-size: 19px"></textarea>
                             </div>
                         </div>
+                        <!-- change location -->
                         <div class="card mt-2 border">
                             <div class="card-body">
                                 <label for="location" class="form-label text-muted">Location</label>
@@ -110,6 +110,7 @@
                                     style="outline: none; box-shadow: none; font-size: 19px"></textarea>
                             </div>
                         </div>
+                        <!-- change website -->
                         <div class="card mt-2 border">
                             <div class="card-body">
                                 <label for="website" class="form-label"></label>
@@ -122,35 +123,18 @@
                             </div>
                         </div>
 
-                        <!-- <div class="h4 fw-bold">Monica Geller</div>
-                        <div class="text-muted">@monica</div>
-                        <div class="mt-2">
-                            CS Graduate Student at Northeastern University. Retuits and likes are not endorsements.
+                        <div class="my-4">
+                            <label for="birthdate">Birth Date &#183;</label>
+                            <span><a href="">Edit</a></span>
+                            <br />
+                            <input type="date" id="birthdate" name="birthdate" />
                         </div>
-                        <div class="me-3 mt-2">
-                            <span>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span class="ms-1">Boston, MA</span>
-                            </span>
-                            <span class="ms-3">
-                                <i class="fa-solid fa-cake-candles"></i>
-                                <span class="ms-1">Born November 21, 1987</span>
-                            </span>
-                            <span class="ms-3">
-                                <i class="fa-regular fa-calendar-days"></i>
-                                <span class="ms-1">Joined April 2009</span>
-                            </span>
-                        </div> -->
                     </div>
                     <!------------ Footer ------------>
-                    <footer class="ms-4 me-3 mt-2">
+                    <footer class="ms-4 me-3 mt-2 d-flex align-items-center">
+                        <span class="h5 me-auto text-start">Switch to Professional</span>
                         <span>
-                            <span class="fw-bold">340</span>
-                            <span>Following</span>
-                        </span>
-                        <span class="ms-3">
-                            <span class="ms-1 fw-bold">223</span>
-                            <span>Followers</span>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </span>
                     </footer>
                 </div>

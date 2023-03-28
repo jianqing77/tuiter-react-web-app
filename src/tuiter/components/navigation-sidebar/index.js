@@ -10,7 +10,7 @@ const NavigationSidebar = () => {
     const { pathname } = useLocation();
     const paths = pathname.split('/');
     // const active = paths[2];
-    const active = paths[2] ? paths[2] : 'explore';
+    const active = paths[2] ? paths[2] : 'home';
 
     return (
         // wrapped with a parent element div or tags with no names
@@ -53,12 +53,13 @@ const NavigationSidebar = () => {
                 </span>
                 <span className="d-none d-xl-inline ">Lists</span>
             </a>
-            <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
+            <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
                 <span className="me-1">
                     <FontAwesomeIcon icon={icon({ name: 'user', style: 'solid' })} />
                 </span>
                 <span className="d-none d-xl-inline ">Profile</span>
-            </a>
+            </Link>
+
             <a className={`list-group-item ${active === 'more' ? 'active' : ''}`}>
                 <span className="me-1">
                     <FontAwesomeIcon icon={icon({ name: 'info-circle', style: 'solid' })} />
