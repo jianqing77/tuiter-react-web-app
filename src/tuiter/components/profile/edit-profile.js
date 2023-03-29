@@ -190,7 +190,7 @@ const EditProfileComponent = ({ setIsEditingProfile }) => {
                                 id="firstName"
                                 rows="1"
                                 placeholder={firstName}
-                                style={{ outline: 'none', boxShadow: 'none', fontSize: '19px' }}
+                                style={{ outline: 'none', boxShadow: 'none', fontSize: '19px', resize: 'none' }}
                                 onChange={firstNameChangeHandler}></textarea>
                         </div>
                         <div className="card-body">
@@ -202,7 +202,7 @@ const EditProfileComponent = ({ setIsEditingProfile }) => {
                                 id="lastName"
                                 rows="1"
                                 placeholder={lastName}
-                                style={{ outline: 'none', boxShadow: 'none', fontSize: '19px' }}
+                                style={{ outline: 'none', boxShadow: 'none', fontSize: '19px', resize: 'none' }}
                                 onChange={lastNameChangeHandler}></textarea>
                         </div>
                     </div>
@@ -218,7 +218,7 @@ const EditProfileComponent = ({ setIsEditingProfile }) => {
                             id="bio"
                             rows="4"
                             placeholder={bio}
-                            style={{ outline: 'none', boxShadow: 'none', fontSize: '19px' }}
+                            style={{ outline: 'none', boxShadow: 'none', fontSize: '19px', resize: 'none' }}
                             onChange={bioChangeHandler}></textarea>
                     </div>
                 </div>
@@ -233,7 +233,7 @@ const EditProfileComponent = ({ setIsEditingProfile }) => {
                             id="location"
                             rows="1"
                             placeholder={location}
-                            style={{ outline: 'none', boxShadow: 'none', fontSize: '19px' }}
+                            style={{ outline: 'none', boxShadow: 'none', fontSize: '19px', resize: 'none' }}
                             onChange={locationChangeHandler}></textarea>
                     </div>
                 </div>
@@ -248,7 +248,7 @@ const EditProfileComponent = ({ setIsEditingProfile }) => {
                             id="website"
                             rows="1"
                             placeholder={website}
-                            style={{ outline: 'none', boxShadow: 'none', fontSize: '19px' }}
+                            style={{ outline: 'none', boxShadow: 'none', fontSize: '19px', resize: 'none' }}
                             onChange={websiteChangeHandler}></textarea>
                     </div>
                 </div>
