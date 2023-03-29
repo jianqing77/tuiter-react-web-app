@@ -58,7 +58,7 @@ const ProfileContentComponent = ({ setIsEditingProfile }) => {
                 <div className="d-flex justify-content-end mt-2">
                     {/* Wrap the button in a Link component */}
                     <button
-                        className="btn btn-primary rounded-pill float-end ms-xxl-1"
+                        className="btn btn-primary rounded-pill float-end ms-xxl-1 bg-white text-black border-secondary"
                         onClick={editProfileClickHandler}>
                         Edit Profile
                     </button>

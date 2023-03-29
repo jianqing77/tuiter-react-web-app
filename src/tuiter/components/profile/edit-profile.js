@@ -177,7 +177,7 @@ const EditProfileComponent = ({ setIsEditingProfile }) => {
                 </div>
             </div>
             {/* <!------------ Content -------> */}
-            <div className="mt-5 ms-4">
+            <div className="mt-5 ">
                 {/* <!-- change name --> */}
                 <div className="card mt-2 border">
                     <div className="d-flex justify-content-center">
@@ -308,7 +308,7 @@ const EditProfileComponent = ({ setIsEditingProfile }) => {
                 )}
             </div>
             {/* <!------------ Footer ------------> */}
-            <footer className="ms-4 me-3 mt-2 d-flex align-items-center">
+            <footer className=" me-3 mt-2 d-flex align-items-center">
                 <span className="h5 me-auto text-start">Switch to Professional</span>
                 <span>
                     <FontAwesomeIcon icon={icon({ name: 'chevron-right', style: 'solid' })} />
