@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { createTuit } from '../../reducers/tuits-reducer';
 
-import { createTuitThunk } from '../../../services/tuits-thunks';
 /**********************************************************************
  * whats-happening.js
  * Implementation of forms using React and Redux
@@ -17,6 +16,7 @@ const WhatsHappeningComponent = () => {
      */
     let [whatsHappening, setWhatsHappening] = useState('');
     const [placeholder, setPlaceholder] = useState("What's happening?");
+
     // retrieve dispatch function with hook
     const dispatch = useDispatch();
 
@@ -25,8 +25,7 @@ const WhatsHappeningComponent = () => {
         const newTuit = {
             tuit: whatsHappening,
         };
-        // dispatch(createTuit(newTuit));
-        dispatch(createTuitThunk(newTuit));
+        dispatch(createTuit(newTuit));
         setWhatsHappening('');
         setPlaceholder("What's happening?");
     };

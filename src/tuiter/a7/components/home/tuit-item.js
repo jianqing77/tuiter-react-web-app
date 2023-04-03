@@ -2,8 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { useDispatch } from 'react-redux';
-// import { deleteTuit } from '../../reducers/tuits-reducer';
-import { deleteTuitThunk } from '../../../services/tuits-thunks';
+import { deleteTuit } from '../../reducers/tuits-reducer';
 
 /****************************************************************
  * tuit-item.js
@@ -12,8 +11,9 @@ import { deleteTuitThunk } from '../../../services/tuits-thunks';
 
 const TuitItem = ({ post }) => {
     const dispatch = useDispatch();
+    // define a handler for the delete button onClick event
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuitThunk(id));
+        dispatch(deleteTuit(id));
     };
 
     return (
@@ -22,15 +22,11 @@ const TuitItem = ({ post }) => {
                 <div>
                     <span className="fw-bold ms-1">{post.userName}</span>
                     <span className="ms-1">
-                        <FontAwesomeIcon
-                            icon={icon({ name: 'circle-check', style: 'solid' })}
-                        />
+                        <FontAwesomeIcon icon={icon({ name: 'circle-check', style: 'solid' })} />
                     </span>
                     <span className="fw-bold ms-1">{post.handle}</span>
                     <span className="text-muted ms-1">&#183; {post.time}</span>
-                    <i
-                        className="bi bi-x-lg float-end"
-                        onClick={() => deleteTuitHandler(post._id)}></i>
+                    <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(post._id)}></i>
                     <span className="d-block ms-1">{post.tuit}</span>
                 </div>
             </div>

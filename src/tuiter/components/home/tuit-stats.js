@@ -1,15 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
-
+import { useDispatch } from 'react-redux';
+import { updateTuitThunk } from '../../../services/tuits-thunks';
 /****************************************************************
  * tuit-stats.js
  * Part of TuitListComponent which include tuit post's statistics
  *****************************************************************/
-const TuitStats = ({ post, onLikePost }) => {
-    const handleLike = (event) => {
-        event.preventDefault();
-        onLikePost({ _id: post._id });
+const TuitStats = ({ post }) => {
+    const dispatch = useDispatch();
+
+    const [liked, setLiked] = useState(post.liked);
+    const [likes, setLikes] = useState(post.likes);
+    const [disliked, setDisliked] = useState(post.disliked || 0);
+    const [dislikes, setDislikes] = useState(post.dislikes || 0);
+
+    const handleLike = () => {
+        dispatch(
+            updateTuitThunk({
+                ...post,
+                liked: !liked,
+                likes: liked ? likes - 1 : likes + 1,
+            })
+        ).then(() => {
+            setLiked(!liked);
+            setLikes(liked ? likes - 1 : likes + 1);
+        });
+    };
+
+    const handleDislike = () => {
+        dispatch(
+            updateTuitThunk({
+                ...post,
+                disliked: !disliked,
+                dislikes: disliked ? dislikes - 1 : dislikes + 1,
+            })
+        ).then(() => {
+            setDisliked(!disliked);
+            setDislikes(disliked ? dislikes - 1 : dislikes + 1);
+        });
     };
 
     return (
@@ -25,20 +54,40 @@ const TuitStats = ({ post, onLikePost }) => {
                 </div>
                 <div className="col">
                     <a href="#" onClick={handleLike}>
-                        {post.liked ? (
+                        {liked ? (
                             <FontAwesomeIcon
                                 icon={icon({ name: 'heart', style: 'solid' })}
                                 style={{ color: '#dc3545' }}
                             />
                         ) : (
-                            <FontAwesomeIcon icon={icon({ name: 'heart', style: 'regular' })} />
+                            <FontAwesomeIcon
+                                icon={icon({ name: 'heart', style: 'regular' })}
+                            />
                         )}
                     </a>
-                    <span className="ms-1">{post.likes}</span>
+                    <span className="ms-1">{likes}</span>
                 </div>
 
                 <div className="col">
-                    <FontAwesomeIcon icon={icon({ name: 'share-nodes', style: 'solid' })} />
+                    <a href="#" onClick={handleDislike}>
+                        {disliked ? (
+                            <FontAwesomeIcon
+                                icon={icon({ name: 'thumbs-down', style: 'solid' })}
+                                style={{ color: '#dc3545' }}
+                            />
+                        ) : (
+                            <FontAwesomeIcon
+                                icon={icon({ name: 'thumbs-down', style: 'regular' })}
+                            />
+                        )}
+                    </a>
+                    <span className="ms-1">{dislikes}</span>
+                </div>
+
+                <div className="col">
+                    <FontAwesomeIcon
+                        icon={icon({ name: 'share-nodes', style: 'solid' })}
+                    />
                 </div>
             </div>
         </div>
