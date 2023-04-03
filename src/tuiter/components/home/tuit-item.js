@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 // import { deleteTuit } from '../../reducers/tuits-reducer';
 import { deleteTuitThunk } from '../../../services/tuits-thunks';
 
@@ -12,6 +12,7 @@ import { deleteTuitThunk } from '../../../services/tuits-thunks';
 
 const TuitItem = ({ post }) => {
     const dispatch = useDispatch();
+
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuitThunk(id));
     };

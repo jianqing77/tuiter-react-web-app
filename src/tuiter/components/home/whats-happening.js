@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { createTuit } from '../../reducers/tuits-reducer';
 
 import { createTuitThunk } from '../../../services/tuits-thunks';
@@ -16,14 +16,30 @@ const WhatsHappeningComponent = () => {
      * setPlaceholder: a function that updates the state value.
      */
     let [whatsHappening, setWhatsHappening] = useState('');
-    const [placeholder, setPlaceholder] = useState("What's happening?");
-    // retrieve dispatch function with hook
+    const [placeholder, setPlaceholder] = useState("What's happening?"); // retrieve dispatch function with hook
     const dispatch = useDispatch();
+    const profile = useSelector((state) => state.profile);
 
     // button tuit handler
     const tuitClickHandler = () => {
+        const now = new Date();
+        const timeDiff = now - new Date();
+        let time;
+        const minute = 60 * 1000;
+        const hour = minute * 60;
+        if (timeDiff < minute) {
+            time = Math.floor(timeDiff / 1000) + 's';
+        } else if (timeDiff < hour) {
+            time = Math.floor(timeDiff / minute) + 'm';
+        } else {
+            time = Math.floor(timeDiff / hour) + 'h';
+        }
         const newTuit = {
             tuit: whatsHappening,
+            userName: profile.firstName + ' ' + profile.lastName,
+            handle: profile.handle,
+            time: time,
+            image: profile.profilePicture,
         };
         // dispatch(createTuit(newTuit));
         dispatch(createTuitThunk(newTuit));
@@ -40,7 +56,12 @@ const WhatsHappeningComponent = () => {
     return (
         <div className="row">
             <div className="col-auto">
-                <img src={require(`../../images/nasa.jpg`)} width={60} />
+                <img
+                    src={require(`../../images/${profile.profilePicture}`)}
+                    width={60}
+                    className="rounded-circle"
+                    alt="profile avatar"
+                />
             </div>
             <div className="col-10">
                 <textarea

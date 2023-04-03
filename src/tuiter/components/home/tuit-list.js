@@ -28,8 +28,8 @@ const TuitsListComponent = () => {
     const likeTuitHandler = (tuit) => {
         dispatch(likePostToggle(tuit));
     };
-    console.log('loading', loading);
-    console.log('tuits length', tuits.length);
+    // console.log('loading', loading);
+    // console.log('tuits length', tuits.length);
 
     return (
         <ul className="list-group">
@@ -41,11 +41,11 @@ const TuitsListComponent = () => {
                         <div key={id} className="border-bottom ms-3">
                             <div className="row py-3">
                                 <div className="col-md-1 col-2">
-                                    {/* <img
+                                    <img
                                         src={require(`../../images/${tuit.image}`)}
                                         alt="avatar"
                                         className="avatar-image rounded-circle"
-                                    /> */}
+                                    />
                                 </div>
                                 <div className="col-md-11 col-10  ps-3">
                                     <TuitItem post={tuit} />
