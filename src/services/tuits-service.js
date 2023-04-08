@@ -3,15 +3,9 @@
  *  the React application runs on localhost:3000
  *  integrating these two applications consists of exchanging HTTP messages.
  * **************************************************************************/
-
-/****************************************************************************
- 
- ***************************************************************************/
 import axios from 'axios';
-// const API_BASE = process.env.REACT_APP_API_BASE;
-// const TUITS_API = `${API_BASE}/tuits`;
-// const TUITS_API = 'http://localhost:4000/api/tuits'; // location of HTTP services
-// const TUITS_API = 'https://tuiter-node-server-app-qf0x.onrender.com/api/tuits';
+
+// const TUITS_API = 'https://tuiter-node-server-app-jq.herokuapp.com/api/tuits';
 const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;
 // async tags functions as asynchronous
