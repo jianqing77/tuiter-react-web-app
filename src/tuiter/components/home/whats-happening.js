@@ -22,23 +22,10 @@ const WhatsHappeningComponent = () => {
 
     // button tuit handler
     const tuitClickHandler = () => {
-        const now = new Date();
-        const timeDiff = now - new Date();
-        let time;
-        const minute = 60 * 1000;
-        const hour = minute * 60;
-        if (timeDiff < minute) {
-            time = Math.floor(timeDiff / 1000) + 's';
-        } else if (timeDiff < hour) {
-            time = Math.floor(timeDiff / minute) + 'm';
-        } else {
-            time = Math.floor(timeDiff / hour) + 'h';
-        }
         const newTuit = {
             tuit: whatsHappening,
             userName: profile.firstName + ' ' + profile.lastName,
             handle: profile.handle,
-            time: time,
             image: profile.profilePicture,
         };
         // dispatch(createTuit(newTuit));
